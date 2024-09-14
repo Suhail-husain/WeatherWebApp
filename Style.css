@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #E0F7FA; /* Soft light sky blue */
+  margin: 0;
+  padding: 0;
+  color: #37474F; /* Dark slate gray for text */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #00796B; /* Teal color */
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important; /* White text */
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border-color: #C4DAD2;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Centered Search Box */
+.search-box {
+  margin: 30px auto;
+  text-align: center;
+  width: 400px; /* Increased width */
+}
+
+.search-box .form-control {
+  width: 100%; /* Make input fill the container */
+  display: inline-block;
+  border-color: #CFD8DC; /* Light blue-gray border */
+}
+
+/* Weather Section */
+.weather {
+  background-color: #FFFFFF; /* White for contrast */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; /* Align content in a row */
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space between items */
+}
+
+.locationbox {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 0px;
+  color: #003366; 
+}
+
+.temperature {
+  font-size: 3em;
+  color: #00796B; /* Teal for temperature */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Flex Container for Image and Main Details */
+.weatherdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align to the left */
+}
+
+.imagebox {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.imagebox img {
+  width: 200px; /* Adjusted size */
+  max-width: 100%;
+  display: block;
+}
+
+/* Weather Stats in One Line */
+.otherdetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Align to the full width */
+  margin-top: 15px;
+  border-top: 1px solid #CFD8DC; /* Light blue-gray divider */
+  padding-top: 10px;
+}
+
+.otherdetails div {
+  font-size: 1em;
+  color: #6e9 8ad; /* Medium-light gray for secondary text */
+  text-align: center;
+}
+
+/* Pricing Plans Section */
+.div-container {
+  background-color: #FFFFFF; /* White */
+  padding: 40px 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  font-size: 1em;
+}
+
+.table thead th {
+  background-color: #00796B; /* Teal color */
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #CBF1F5; /* Soft light gray-blue */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #CBF1F5; /* Slightly darker light blue */
+}
+
+.table td,
+.table th {
+  padding: 12px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #003366; /* Dark blue */
+  color: white;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .weather {
+    flex-direction: column; /* Stack on small screens */
+    align-items: center;
+  }
+
+  .search-box {
+    width: 90%; /* Full width for mobile */
+  }
+
+  .otherdetails {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Weatherbox {
+  display: flex;
+  margin-left: 30px;
+}
+
+.currentweatherbox {
+  height: 60px;
+  width: 50px;
+}
+
+.table td p {
+  display: inline; /* Ensures text elements are inline */
+  margin-right: 3px; /* Adds space between value and unit */
+}
+.errortext{
+  font-size:medium;
+  color:red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.defaultcities{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  text-decoration:underline ;
+}
