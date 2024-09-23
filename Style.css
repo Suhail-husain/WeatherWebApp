@@ -191,11 +191,10 @@ footer {
 .errortext{
   font-size:medium;
   color:red;
-  text-decoration: underline;
-  font-weight: bold;
+  font-weight:bolder;
 }
 .defaultcities{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
-  text-decoration:underline ;
+  
 }
