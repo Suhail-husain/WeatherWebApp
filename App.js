@@ -1,7 +1,8 @@
-const key="062b1f092ba84d07a0682319243108";
+const key="20fa987a5ecb4968b6f123533242009";
 const url=`http://api.weatherapi.com/v1/current.json?key=${key}&q=`;
 let btn=document.querySelector(".btn");
-btn.addEventListener("click",()=>{
+btn.addEventListener("click",(event)=>{
+    event.preventDefault();
     const input=document.querySelector("input");
     const searchbarvalue=input.value;
     wheatherdetails(searchbarvalue);
@@ -10,7 +11,7 @@ btn.addEventListener("click",()=>{
 
 async function wheatherdetails(searchbarvalue){
     try{
-    const res= await axios.get(url+searchbarvalue);
+    const res= await axios.get(url +searchbarvalue);
     console.log(res);
     const location=res.data.location.name;
     const Precipitation=res.data.current.precip_mm;
